@@ -40,14 +40,14 @@ az sql db create \
 	--resource-group myResourceGroup \
 	--server $servername \
 	--name mySampleDatabase \
-	--elastic-pool-name myFirstPool
+	--elastic-pool myFirstPool
 
 # Move the database to the second pool - create command updates the db if it exists
 az sql db create \
 	--resource-group myResourceGroup \
 	--server-name $servername \
 	--name mySampleDatabase \
-	--elastic-pool-name mySecondPool
+	--elastic-pool mySecondPool
 
 # Move the database to standalone S1 performance level
 az sql db create \
